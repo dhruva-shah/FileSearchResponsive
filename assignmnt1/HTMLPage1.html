@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>SearchIt</title>
+    <link rel="icon" type="image/png" href="https://cdn4.iconfinder.com/data/icons/simplicio/128x128/document_search.png">
+    <!-- for datepicker-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
+    
+    <!-- for datepicker-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- for mobile-->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <script type="text/javascript" src="Script1.js"></script>
+</head>
+<body>
+    <div>
+        <div id="heading"><h1 id="h1head" style="visibility:visible">Search<span id="spanhead" style="visibility:visible">It</span></h1></div>
+       
+        <div id="menucap">
+            <div id="ham">
+                <img id="menuicon" src="Menu.png" alt="menu">
+            </div>
+            <div id="menu">
+                <div id="home"><a href="#">Home</a></div>
+                <div id="about"><a href="#">About Us</a></div>
+                <div id="contact"><a href="#">Contact Us</a></div>
+            </div>           
+        </div>        
+    </div>
+
+    <div id="filter">
+        <img id="filtericon" src="filter.png" alt="Filter">
+        <div id="filteroption">
+            <select>
+                <option value="select">Select</option>
+                <option value="filetype">File type</option>
+                <option value="size">Size</option>
+            </select>
+        </div>
+        <button id="apply">Apply</button>
+     </div>
+   
+    <div id="date">
+        <label id="dateLabel">Choose date: </label>   
+        <input type="text" id="datepicker">
+    </div>
+    <div id="file">
+        <label id="name">File Name:</label>
+        <input type="text" id="entername">
+        <button id="myButton" class="submit" >Search</button>
+    </div>
+    <div id="radio">
+        <label id="convert">Convert to pdf?</label>
+        <input type="radio" name="convert" value="yes" data-role="none">Yes
+        <input type="radio" name="convert" value="no" data-role="none">No<br>
+    </div>
+    <div></div>
+    
+
+
+    
+
+</body>
+</html>
